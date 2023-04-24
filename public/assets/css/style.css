@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Lato:wght@300&family=Roboto:wght@100&display=swap");
+
+:root {
+  --border-color: #08090a;
+  --background-primary-color: #222823;
+  --button-color: #343a40;
+  --button-color-hover: #495057;
+  --button-color-alternative: #dc2f02;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  background-color: #575a5e;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  justify-content: center;
+}
+.input {
+  text-align: right;
+  color: #ffffff;
+  border: 2px solid #a7a2a9;
+  border-radius: 10px;
+  padding: 10px 25px;
+  background: transparent;
+  height: 80px;
+  width: 100%;
+  font-size: 45px;
+}
+
+.input:active {
+  box-shadow: 2px 2px 15px #575a5e inset;
+}
+
+.menu {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+}
+.corpo {
+  display: flex;
+  background: var(--background-primary-color);
+  width: 320px;
+  height: 600px;
+  position: relative;
+  border-radius: 10px;
+  top: 0px;
+}
+.content {
+  position: absolute;
+  top: 90px;
+  padding: 10px;
+  width: 100%;
+  height: calc(100% - 200px);
+}
+
+.display {
+  color: #ffffff;
+  font-size: 45px;
+  border: 0px;
+  background-color: var(--background-primary-color);
+  text-align: right;
+  padding-right: 20px;
+  height: 80px;
+  width: 100%;
+}
+
+.teclado {
+  position: absolute;
+  width: 257px;
+  height: 310px;
+  left: 32px;
+  top: 130px;
+}
+.fileira {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 10px;
+}
+.btn {
+  color: #ffffff;
+  background-color: var(--button-color);
+  font-family: "Roboto";
+  font-size: 25px;
+  width: 60px;
+  text-align: center;
+  border: none;
+  height: 60px;
+  left: calc(50% - 53px / 2 - 101.5px);
+  top: calc(50% - 50px / 2 - 59px);
+  border-radius: 10px;
+  box-shadow: black 0px 0px 8px;
+}
+.btn:hover {
+  background: var(--button-color-hover);
+}
+
+.btn-eq,
+.btn-sgn,
+.btn-clear {
+  background-color: var(--button-color-alternative);
+}
+.btn-eq:hover,
+.btn-sgn:hover,
+.btn-clear:hover {
+  background-color: #e35834;
+}
